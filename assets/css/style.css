@@ -10985,7 +10985,11 @@ Auth Area CSS
   position: relative;
   bottom: 130px;
 }
-
+.project-details-area *{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
 .event-grid {
   display: grid;
   grid-gap: 8px;
