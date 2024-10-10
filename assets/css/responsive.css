@@ -1,4 +1,7 @@
 @media only screen and (max-width: 767px) {
+  .projects-items {
+    min-height: 1820px !important;
+  }
   .btn {
     font-size: 13px;
     padding: 13px 33px;
@@ -2547,5 +2550,8 @@
   }
   .boxes-area{
     padding-top: 0px;
+  }
+  .projects-items {
+    min-height: 1160px !important;
   }
 }
