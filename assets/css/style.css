@@ -551,10 +551,10 @@ Navbar CSS
   z-index: 998;
   top: 0;
   left: 0;
-  background-color: transparent;
+  background-color: white;
   -webkit-transition: .3s;
   transition: .3s;
-  padding-top: 15px;
+  padding: 15px 0px;
 }
 
 #header.headroom.is-sticky {
@@ -613,6 +613,13 @@ Navbar CSS
   margin-left: 14px;
   margin-right: 14px;
 }
+/* #home-page #header .startp-nav nav .navbar-nav .nav-item a,
+#home-page #header.is-sticky .startp-nav nav .navbar-nav .nav-item a {
+  color: #4a6f8a !important;
+}
+#header.is-sticky .startp-nav nav .navbar-nav .nav-item a {
+  color: #4a6f8a;
+} */
 
 .startp-nav nav .navbar-nav .nav-item a:hover, .startp-nav nav .navbar-nav .nav-item a:focus, .startp-nav nav .navbar-nav .nav-item a.active {
   color: #44ce6f;
@@ -720,13 +727,17 @@ Navbar CSS
   right: 4px;
 }
 
+
 .startp-nav nav .others-option .btn.btn-light {
+  color: white;
   background: transparent;
   border: 2px dashed #cdf1d8;
   padding: 12px 33px;
   margin-right: 10px;
 }
-
+#home-page .startp-nav nav .others-option .btn.btn-light {
+  color: black;
+}
 .startp-nav nav .others-option .btn.btn-light:focus {
   color: #0e314c !important;
 }
@@ -1316,8 +1327,8 @@ Main Banner CSS
 .shape8 {
   position: absolute;
   z-index: -1;
-  top: 15%;
-  right: 10%;
+  top: 120px;
+  right: 30px;
 }
 
 @-webkit-keyframes movebounce {
@@ -1643,7 +1654,7 @@ About CSS
 Why Choose US CSS
 =================================================*/
 .why-choose-us {
-  background: transparent url(../../assets/img/banner-bg1.jpg) right top no-repeat;
+  /* background: transparent url(../../assets/img/banner-bg1.jpg) right top no-repeat; */
   position: relative;
   z-index: 1;
 }
@@ -2648,6 +2659,8 @@ Team CSS
   z-index: 1;
   padding-left: 35px;
   padding-right: 35px;
+  max-width: 200px;
+  margin: auto;
 }
 
 .single-team .team-image img {
@@ -5934,16 +5947,27 @@ Page Title CSS
 .page-title-area {
   position: relative;
   z-index: 1;
-  background: transparent url(../../assets/img/banner-bg1.jpg) right top no-repeat;
-  padding-top: 190px;
-  padding-bottom: 100px;
+  background: url(../img/banner-bg1.jpg);
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  padding-top: 240px;
+  padding-bottom: 150px;
   text-align: center;
 }
 
 .page-title-area h2 {
+  color: white;
   font-size: 28px;
   font-weight: 700;
   margin: 0;
+}
+.page-title-area p{
+  color: white;
+  margin-top: 10px;
+}
+.page-title-area .section-title{
+ margin: 0px;
 }
 
 /*================================================
@@ -11076,4 +11100,7 @@ Auth Area CSS
     grid-column: 5;
     grid-row: calc(4 + var(--row-step));
   }
+}
+.col-lg-4 .single-services-box-item .icon{
+  background-color: transparent !important;
 }
