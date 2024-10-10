@@ -729,7 +729,6 @@ Navbar CSS
 
 
 .startp-nav nav .others-option .btn.btn-light {
-  color: white;
   background: transparent;
   border: 2px dashed #cdf1d8;
   padding: 12px 33px;
@@ -5956,9 +5955,8 @@ Page Title CSS
   text-align: center;
 }
 
-.page-title-area h2 {
+.page-title-area h1 {
   color: white;
-  font-size: 28px;
   font-weight: 700;
   margin: 0;
 }
